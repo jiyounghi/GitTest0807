@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href="#">Spring특화과정</a><br></h1>
+    <input type="button" value="디자인바꿔보자" onclick="pageDesign()">
+    <input type="button" value="다시 초기화!" onclick="pageInit()">
+    <ul>
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JavaScript </li>
+    </ul>
+    <h1>오늘은 2월 24일!</h1>
+    자바스크립트 첫 스타트! -
+
+    <!-- JS -->
+    <script>
+        // 자바스크립트 언어를 정의하는 영역 
+        function pageDesign() {
+            document.querySelector('body').style.backgroundColor='black';
+            document.querySelector('body').style.color='white';
+        }
+        function pageInit() {
+            document.querySelector('body').style.backgroundColor='white';
+            document.querySelector('body').style.color='black';
+        }
+    </script>
+     <!-- 여기서 document란 이 파일 전체를 가리킴-->
+</body>
+</html>

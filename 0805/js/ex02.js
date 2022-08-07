@@ -1,0 +1,1 @@
+console.log("ex02.js에 있는 코드실행!")

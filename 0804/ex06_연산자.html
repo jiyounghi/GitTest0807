@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 연산자
+        // ==(동등연산자) vs ===(일치연산자)
+        // 숫자데이터와 비교연산을 할 때 동등연산자를 이용하면 
+        // 자동형변환이 발생 --> 정확한 비교x 
+        // 일치연산자를 이용해서 값을 비교해야 한다! 
+        console.log(5 == 5);  //true
+        console.log(2 == '2'); //true, 자동형변환(문자열->숫자)
+        console.log(2 === '2'); //false
+        console.log(1 < '5'); //true, 자동형변환
+    </script>
+    
+</body>
+</html>

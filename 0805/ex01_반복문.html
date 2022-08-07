@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 내부 스크립트 방식-->
+    <script>
+
+        //반복문 : for문, while문, do-while문 
+
+        // 자바스크립트에서는 int자료형이 없기 때문에
+        // 초기화구문에 변수를 정의할 때 let키워드로 정의 
+        // for(let i=0; i<10; i++) {
+        //     console.log(i);
+        // }
+
+        //UpDown 게임 만들기
+        // - 값 입력받기 : prompt()
+        // - 값 생성 : Math.random()
+        // - 맞출 때까지 반복 : while문 or do~while()
+        // - 정답여부출력 : alert()-틀렸을때..작거나크다고알림, 
+        // console.log() - 맞췄을때 
+
+        //1~50까지의 랜덤값 생성
+        //Math.random()는 0~1사이의 실수데이터를 생성하기 때문에
+        //parseInt()를 이용해서 정수데이터로 변환
+
+        //var키워드 : 함수레벨스코프
+        // - function안에서 정의한 변수와 바깥쪽에서 정의한 변수 다르게 인식    
+        //let, const키워드 : 블록레벨스코프
+        // - {}안에서 정의한 변수와 바깥쪽에서 정의한 변수를 다르게 인식 
+
+        let num = parseInt(Math.random()*50)+1; 
+        console.log("랜덤값:", num);
+
+        while(true) {
+            let nswer = parseInt(prompt("숫자를 입력해주세요!"));
+            if(nswer===num) {
+                console.log("정답입니다! 축하!");
+                break;
+            }else {
+                if(nswer < num) 
+                    alert("입력한 숫자보다 작은 수 입니다...")
+                else if (nswer > num)
+                    alert("입력한 숫자보다 큰 수 입니다...")
+            }
+        }
+    </script>
+</body>
+</html>
